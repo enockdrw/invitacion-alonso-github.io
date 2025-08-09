@@ -41,7 +41,7 @@ function toggleMusic() {
         
         // Confirmar asistencia por WhatsApp
         function confirmarAsistencia() {
-            const mensaje = encodeURIComponent('¡Hola! Confirmo mi asistencia al cumpleaños de Alonso el 23 de agosto de 10:00 am a 1:00 pm en CasaPlay Valle Grande. ¡Llevaré mis calcetas antideslizantes! Nos vemos ahí! 🎉🧦');
+            const mensaje = encodeURIComponent('¡Hola! Confirmo mi asistencia al cumpleaños de Alonso el 23 de agosto de 10:00 am a 2:00 pm en CasaPlay Valle Grande. ¡Llevaré mis calcetas antideslizantes! Nos vemos ahí!');
             const whatsappURL = `https://wa.me/56935299591?text=${mensaje}`;
             
             // Abrir WhatsApp
