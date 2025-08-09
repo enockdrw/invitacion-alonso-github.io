@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Alonso cumple 8 años! - Fiesta Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Meta tags para compartir en WhatsApp y redes sociales -->
+    <meta property="og:title" content="🎮 ¡Alonso cumple 8 años! - Fiesta Minecraft">
+    <meta property="og:description" content="🎉 Te invitamos a celebrar el cumpleaños de Alonso el 23 de agosto en CasaPlay Valle Grande. ¡Será una aventura épica estilo Minecraft! 🧱⚔️">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://enockdrw.github.io/invitacion-alonso-github.io/">
+    <meta property="og:type" content="website">
+    
+    <!-- Meta tags para Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🎮 ¡Alonso cumple 8 años! - Fiesta Minecraft">
+    <meta name="twitter:description" content="🎉 Te invitamos a celebrar el cumpleaños de Alonso el 23 de agosto en CasaPlay Valle Grande. ¡Será una aventura épica estilo Minecraft! 🧱⚔️">
+    <meta name="twitter:image" content="https://i.imgur.com/minecraft-birthday.png">
+    
+    <!-- Meta tags adicionales -->
+    <meta name="description" content="Invitación digital interactiva para el cumpleaños de Alonso. Fiesta temática Minecraft el 23 de agosto en CasaPlay Valle Grande.">
+
+</head>
+<body>
+    <!-- Nubes animadas -->
+    <!-- Control de música -->
+    <div class="music-control" id="musicControl" onclick="toggleMusic()">
+        🎵
+    </div>
+    
+    <!-- Audio -->
+    <audio id="backgroundMusic" loop>
+        <source src="./assets/audio/1-04. Death.mp3" type="audio/mpeg">
+        <!-- Fallback usando un archivo de música disponible -->
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmMhBjaM0fLafD8HIaXN9uSFMwggct/m76EuCCKF3vDYdCUA" type="audio/wav">
+    </audio>
+    
+    <div class="clouds">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+    </div>
+    
+    <!-- Partículas -->
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <!-- Header decorativo -->
+        <div class="header">
+            <div class="block-decoration grass"></div>
+            <div class="block-decoration stone"></div>
+            <div class="block-decoration diamond"></div>
+            <div class="block-decoration grass"></div>
+            <div class="block-decoration stone"></div>
+        </div>
+        
+        <!-- Título principal -->
+        <h1 class="title">¡Alonso cumple 8 años!</h1>
+        
+        <!-- Tarjeta de invitación -->
+        <div class="invitation-card">
+            <!-- Personajes decorativos -->
+            <div class="character steve"></div>
+            <div class="character alex"></div>
+            
+            <div class="event-details">
+                <p>🎉 <span class="highlight">¡Ven a celebrar conmigo!</span> 🎉</p>
+                <br>
+                <p>📅 <span class="highlight">Fecha:</span> 23 de agosto</p>
+                <br>
+                <p>🕙 <span class="highlight">Hora:</span> 10:00 am - 1:00 pm</p>
+                <br>
+                <p>📍 <span class="highlight">Lugar:</span></p>
+                <p>CasaPlay Valle Grande</p>
+                <p>Santa Teresita de los Andes 372</p>
+                <p>Valle Grande</p>
+                <br>
+                <p>🧦 <span class="highlight">¡Importante!</span></p>
+                <p>Debes traer <span class="highlight">calcetas antideslizantes</span></p>
+                <p>para jugar seguro</p>
+                <br>
+                <p>🎮 <span class="highlight">¡Será una aventura épica!</span> 🎮</p>
+            </div>
+            
+            <!-- Botones interactivos -->
+            <div class="buttons-container">
+                <button class="minecraft-button button-whatsapp" onclick="confirmarAsistencia()">
+                    📱 Confirmar Asistencia
+                </button>
+                
+                <button class="minecraft-button button-maps" onclick="verUbicacion()">
+                    🗺️ Ver Ubicación
+                </button>
+            </div>
+        </div>
+        
+        <!-- Footer decorativo -->
+        <div class="header">
+            <div class="block-decoration diamond"></div>
+            <div class="block-decoration grass"></div>
+            <div class="block-decoration stone"></div>
+            <div class="block-decoration grass"></div>
+            <div class="block-decoration diamond"></div>
+        </div>
+    </div>
+    
+    <!-- Creeper decorativo -->
+    <div class="creeper" onclick="playSound()"></div>
+    
+    <!-- Pantalla de agradecimiento -->
+    <div class="thank-you-screen" id="thankYouScreen">
+        <div class="thank-you-content">
+            <div class="close-button" onclick="closeThanks()">×</div>
+            <div class="thank-you-character"></div>
+            <h2 style="color: #4CAF50; margin-bottom: 20px; font-size: clamp(16px, 4vw, 24px);">
+                ¡Gracias por confirmar!
+            </h2>
+            <p style="font-size: clamp(10px, 2.5vw, 14px); color: #333; line-height: 1.8;">
+                ¡Será genial tenerte en mi<br>
+                aventura de cumpleaños!<br>
+                ¡Nos vemos pronto! 🎉
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
